@@ -25,8 +25,6 @@ std::vector<int(*)()> testList;
 //////////////////
 
 int RunAllTests() {
-	//testList.push_back(AdderCosa);
-	//testList.push_back(AdderCasa);
 	for(int(*test)() : testList){
 		VERIFY(test);
 	}
