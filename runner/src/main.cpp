@@ -34,7 +34,7 @@ int RunAllTests() {
 int main(int argc, char **argv) {
 	std::cout<<"Registering tests"<<std::endl;
 	//Code to call register function on all test classes
-	FirstTests adderTests;
+	FirstTests firstTests;
 	////////////////////////////////////////////////////
 	int result = RunAllTests();
 	if (result == 0)
