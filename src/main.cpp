@@ -7,9 +7,6 @@
 #include <iostream>
 #include <vector>
 #include <string>
-//The entry point of the application to be tested
-//#include "sut.h"
-/////////////////////////////////////////////////
 
 //variables to keep track of testing
 int testsRun = 0;
