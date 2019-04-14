@@ -22,7 +22,6 @@ public:
 	FirstTests();
 	virtual ~FirstTests();
 	static int FirstTest();
-	static int SecondTest();
 };
 
 #endif /* SRC_TESTS_FIRSTTESTS_H_ */
