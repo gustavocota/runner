@@ -4,6 +4,7 @@
  *  Created on: Mar 31, 2019
  *      Author: chur
  */
+#include <functional>
 #include <iostream>
 #include <vector>
 #include <string>
