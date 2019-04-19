@@ -11,19 +11,19 @@
 
 //variables to keep track of testing
 int testsRun = 0;
-std::vector<int(*)()> testList;
+std::vector<std::function<int(void)>> testList;
 ////////////////////////////////////
 
 //The core directives that execute the tests
-#include "testingDirectives.h"
+#include "Util/testingDirectives.h"
 ////////////////////////////////////////////
 
 //List of actual tests
-#include "tests/FirstTests.h"
+#include "Tests/FirstTests.h"
 //////////////////
 
 int RunAllTests() {
-	for(int(*test)() : testList){
+	for(std::function<int(void)>test : testList){
 		VERIFY(test);
 	}
 	return 0;
