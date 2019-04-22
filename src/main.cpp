@@ -10,7 +10,7 @@
 #include <string>
 
 //variables to keep track of testing
-int testsRun = 0;
+int totalTestsRun = 0;
 std::vector<std::function<int(void)>> testList;
 ////////////////////////////////////
 
@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
 	int result = RunAllTests();
 	if (result == 0)
 		std::cout<<"PASSED"<<std::endl;
-	std::cout<<"Tests run: "<<testsRun<<std::endl;
+	std::cout<<"Tests run: "<<totalTestsRun<<std::endl;
 
 	return result != 0;
 }

@@ -15,7 +15,6 @@
 #include <tuple>
 #include "../Interfaces/Test.h"
 #include "../Util/testingDirectives.h"
-#include "../Util/util.h"
 
 //typedfs for the dependencies the tests will require
 #include "Dependencies/firstTestsDependencies.h"
