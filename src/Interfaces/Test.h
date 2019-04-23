@@ -17,7 +17,11 @@ extern std::vector<std::function<int(void)>> testList;
 
 template <class DerivedClass>
 class Test {
+protected:
+	void SetUp();
+	void RegisterTests();
 public:
+	Test<DerivedClass>();
 	template<typename Tuple>
 	Tuple GetDependencies();
 	template<typename DependencyTypes>

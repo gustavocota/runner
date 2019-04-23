@@ -20,12 +20,12 @@
 #include "Dependencies/firstTestsDependencies.h"
 /////////////////////////////////////////////////////
 
-class FirstTests : public Test<FirstTests>{
-	void Setup();
-	void RegisterTests();
+class FirstTests : protected Test<FirstTests>{
 public:
 	FirstTests();
 	virtual ~FirstTests();
+	void Setup();
+	void RegisterTests();
 	template<typename Tuple>
 	static int FirstTest(Tuple dependencies);
 };

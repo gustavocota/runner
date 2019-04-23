@@ -9,6 +9,22 @@
 #define SRC_INTERFACES_TEST_HPP_
 
 template<class DerivedClass>
+Test<DerivedClass>::Test(){
+	Test<DerivedClass>::SetUp();
+	Test<DerivedClass>::RegisterTests();
+}
+
+template<class DerivedClass>
+void Test<DerivedClass>::SetUp(){
+	static_cast<DerivedClass*>(this)->SetUp();
+}
+
+template<class DerivedClass>
+void Test<DerivedClass>::RegisterTests(){
+	static_cast<DerivedClass*>(this)->RegisterTests();
+}
+
+template<class DerivedClass>
 template<typename Tuple>
 Tuple Test<DerivedClass>::GetDependencies(){
 	Tuple tuple;

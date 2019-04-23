@@ -15,7 +15,6 @@ FirstTests::~FirstTests() {
 }
 
 void FirstTests::Setup(){
-	RegisterTests();
 }
 
 void FirstTests::RegisterTests(){
